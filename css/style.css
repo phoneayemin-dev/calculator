@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Base Background */
+  --bs-primary-bg: #E5E5E5;
+  
+  /* Light Theme */
+  
+  /* background */
+  --primary-bg: #ffffff;
+  --secondary-bg: #ADD8FF;
+  --bg-one:#19ACFF;
+  /* Text color */
+  --primary-color: #ffffff;
+  --secondary-color: #ADD8FF;
+  --color-one: #000000;
+  /* Dark theme */
+  --primary-dark-bg: #161f27;
+  /* Text color */
+  --primary-dark-color: #ffffff
+}
+body{
+  font-family: Roboto;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bs-primary-bg);
+}
+
+.calculator {
+  width: 375px;
+  height: 725px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--primary-bg);
+  border-radius: 35px;
+  color: var(--primary-color);
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+}
+
+.screen-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-column: span 4;
+  background-color: var(--primary-bg);
+}
+#calculation, #answer {
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: bold;
+}
+#calculation {
+  font-size: large;
+}
+#answer {
+  font-size: xxx-large;
+  color: var(--color-one);
+}
+.operator {
+  background-color: var(--secondary-bg);
+  color: var(--primary-color);
+}
+
+.assign-gp {
+  background-color: var(--bg-one);
+  color: var(--primary-color);
+}
+button {
+  height: 60px;
+  border:none;
+  background-color: var(--primary-bg);
+  border-radius: 10%;
+  font-size: xx-large;
+  color: var(--color-one);
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 5px var(--bs-primary-bg);
+}
+
+button:active {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+
+
+
